@@ -1,0 +1,43 @@
+<html>
+<head>
+ <meta charset="utf-8">    
+ <title>Honkai novel</title>   
+ <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>     
+ <link href="style.css" rel="stylesheet"> 
+</head>
+<body>
+    <div class="wrapper overflow-hidden flex flex-wrap pointer-events-none">
+        <aside class="menu flex flex-auto">
+            <div class="menu__item menu__hide">Hide
+                <img src="img/eye.png">
+            </div>
+            <div class="menu__item menu__history">History
+                 <img src="img/history.png">
+            </div>
+            <div class="menu__item menu__AutoPlay ml-auto">AutoPlay
+                 <img src="img/autoPlay.png">
+            </div>
+            <div class="menu__item menu__Skip ">Skip
+                <img src="img/skip.png">
+            </div>
+        </aside>
+        <main class="display mx-auto relative">
+            <div class="display__characters flex">
+            </div>
+            <div class="display__TextBox overflow-hidden absolute bottom-0">
+                <div class="display__TextBox__name">Киана</div>
+                <div class="display__TextBox__line"></div>
+                <div class="display__TextBox__text"></div>
+                <div class="display__TextBox__triangleBlock relative w-full hidden"><span class="display__TextBox__triangle"></span></div>
+            </div>
+        </main>
+    </div>
+      <div class="history hidden">
+            <div class="history__content overflow-auto">
+          </div>
+            <div class="history__exitBtn">x</div>
+        </div>
+    <script src="newScript.js"></script>
+</body>
+</html>
